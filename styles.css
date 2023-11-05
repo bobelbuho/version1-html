@@ -1,30 +1,37 @@
 *{
    padding: 0;
    margin: 0;
+   font-size: 16px;
 }
+
+/*    BARRE DE RECHERCHE   */
+.header {
+    display: flex; 
+  }
 .navBar{
     width: 100%;
     height: 78px;
     flex-shrink: 0;
     background-color: white;
     color: #000000;
+    display: flex; 
 }
 .logo{
-    width: 253px;
-    height: 78px;
+    width: 15.8125rem;
+    height: 4.875rem;
     position: relative;
 }
 .logoImg{
-    width: 74px;
-    height: 78px;
-    left: 0px;
-    top: 0px;
+    width: 4.625rem;
+    height: 4.875rem;
+    left: 0;
+    top: 0;
     position: absolute;
     border-radius: 77px;
 }
 .JeppeySign{
-    width: 168px; 
-    height: 39px; 
+    width: 10.5rem; 
+    height: 2.4375rem; 
     left: 85px; 
     top: 18px; 
     position: absolute; 
@@ -33,4 +40,29 @@
     font-family: Istok Web; 
     font-weight: 700;
     word-wrap: break-word
+}
+.navBarButton{ 
+    width: 622px; 
+    height: 34px; 
+    position: relative;
+}
+.search{
+    
+    width: 177px; 
+    height: 248px; 
+    left: 50px; 
+    top: 6px; 
+    position: relative;
+}
+.search p{
+    width: 137px; 
+    height: 28px; 
+    left: 40px; 
+    top: 0px; 
+    position: absolute; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 200; 
+    word-wrap: break-word;
 }

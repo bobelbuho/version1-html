@@ -114,6 +114,32 @@
     top: 10px;
     position: absolute;
   }
+
+  /* formulaire de recherche d'un trajet */
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+input[type="text"], input[type="date"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+input[type="submit"] {
+    background-color: #F9CB30;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #f9ca307e;
+}
   
   /* Styles pour les écrans plus petits (ajoutez vos propres valeurs) */
   @media screen and (max-width: 650px) {

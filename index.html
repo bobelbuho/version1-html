@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     
     <title>Jeppey</title>
 </head>
@@ -13,7 +15,7 @@
     <header> 
         <nav class="navBar">
         <div class="logo">
-            <a href="#">
+            <a href="index.html">
             <img class="logoImg" src="./img/logo.jpg" />
             <div class="jeppeySign">Jeppey</div>
           </a>
@@ -43,22 +45,35 @@
 
     <!----------------- FIN BARRE DE NAVIGATION----------->
 
-
-    <form>
-      <label for="departure"></label>
-      <input type="text" id="departure" name="departure" placeholder="Départ" required>
-
-      <label for="destination"></label>
-      <input type="text" placeholder="Destination" id="destination" name="destination" required>
-
-      <label for="date"></label>
-      <input type="date" id="date" name="date" required>
-
-      <label for="kilos"></label>
-      <input type="number" placeholder="Nombre de Kilos" id="kilos" name="kilos" required>
-
-      <input type="submit" value="Rechercher">
-  </form>
+ <!----------------------BARRE DE RECHERCHE--------------------------->
+  <div class="form-container">
+    <form id="travel-form">
+        <div class="form-row">
+            <label for="departure">Départ:</label>
+            <input type="text" id="departure" name="departure" required>
+        </div>
+        <div class="form-row">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+        </div>
+        <div class="form-row">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-row">
+            <label for="weight">Kilogrammes:</label>
+            <select id="weight" name="weight">
+                <option value="0">0 kg</option>
+                <option value="5">5 kg</option>
+                <option value="10">10 kg</option>
+                <option value="15">15 kg</option>
+                <option value="20">20 kg</option>
+                <!-- Additional options can be added here -->
+            </select>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
 
 
 

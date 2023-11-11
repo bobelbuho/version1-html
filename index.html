@@ -1,125 +1,137 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    
-    <title>Jeppey</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+  <title>Jeppey</title>
 </head>
+
 <body>
 
-    <!-----------------BARRE DE NAVIGATION----------->
-    <header> 
-        <nav class="navBar">
-        <div class="logo">
-            <a href="index.html">
-            <img class="logoImg" src="./img/logo.jpg" />
-            <div class="jeppeySign">Jeppey</div>
+  <!-----------------BARRE DE NAVIGATION----------->
+  <header>
+    <nav class="navBar">
+      <div class="logo">
+        <a href="index.html">
+          <img class="logoImg" src="./img/logo.jpg" />
+          <div class="jeppeySign">Jeppey</div>
+        </a>
+      </div>
+      <div class="navBarButton">
+        <div class="search">
+          <a href="#">
+            <p>Rechercher</p>
+            <div class="Vector" style="width: 27.12px; height: 19.45px; left: 0px; top: 3.85px; position: absolute;">
+              <img src="./img/search.png" alt="">
+            </div>
           </a>
         </div>
-          <div class="navBarButton">
-            <div class="search">
-                <a href="#">
-                  <p>Rechercher</p>
-                  <div class="Vector" style="width: 27.12px; height: 19.45px; left: 0px; top: 3.85px; position: absolute;">
-                    <img src="./img/search.png" alt="">
-                  </div>
-                </a>
-              </div>
-            <div class="publish">
-                <a href="#">
-              <p class="postARide" style="">Publier un trajet</p>
-              <img src="./img/postARide.jpg">
-            </a>
+        <div class="publish">
+          <a href="#">
+            <p class="postARide" style="">Publier un trajet</p>
+            <img src="./img/postARide.jpg">
+          </a>
         </div>
-            <a href="#">
-            <img class="profil-picture" src="./img/profil-picture.png">
-          </div>
+        <a href="#" id="profilBtn">
+          <img class="profil-picture" src="./img/profil-picture.png">
         </a>
-        </nav>
-    </header>
+        <div id="cadre" class="hidden">
+          <ul>
+            <li>
+              <a href="#">Connexion</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </header>
 
 
-    <!----------------- FIN BARRE DE NAVIGATION----------->
+  <!----------------- FIN BARRE DE NAVIGATION----------->
 
- <!----------------------BARRE DE RECHERCHE--------------------------->
+  <!----------------------BARRE DE RECHERCHE--------------------------->
   <div class="form-container">
     <form id="travel-form">
-        <div class="form-row departure">
-            <input type="text" id="departure" placeholder="Départ" name="departure" required>
-        </div>
-        <div class="form-row destination">
-            <input type="text" id="destination" placeholder="Destination" name="destination" required>
-        </div>
-        <div class="form-row ">
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
-        </div>
-        <div class="form-row">
-            <label for="weight">Kilogrammes:</label>
-            <select id="weight" name="weight">
-                <option value="0">0 kg</option>
-                <option value="5">5 kg</option>
-                <option value="10">10 kg</option>
-                <option value="15">15 kg</option>
-                <option value="20">20 kg</option>
-            </select>
-        </div>
-        <button type="submit" class="submit-btn">Submit</button>
+      <div class="form-row departure">
+        <input type="text" id="departure" placeholder="Départ" name="departure" required>
+      </div>
+      <div class="form-row destination">
+        <input type="text" id="destination" placeholder="Destination" name="destination" required>
+      </div>
+      <div class="form-row ">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-row">
+        <label for="weight">Kilogrammes:</label>
+        <select id="weight" name="weight">
+          <option value="0">0 kg</option>
+          <option value="5">5 kg</option>
+          <option value="10">10 kg</option>
+          <option value="15">15 kg</option>
+          <option value="20">20 kg</option>
+        </select>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
     </form>
-</div>
+  </div>
 
-    <!-----------------SLIDE IMAGE 1---------------------------->
-<main>
+  <!-----------------SLIDE IMAGE 1---------------------------->
+  <main>
     <div class="full-width-image">
       <img src="./img/slide1.png">
     </div>
-    
-
-</main>
 
 
-    <!--------------------FOOTER--------------------------->
+  </main>
 
-    <div class="footer">
-      <div class="content">
-        <img class="logo" src="img/logo.svg" />
-        <div class="footer-link">
-          <div class="link">Link One</div>
-          <div class="link">Link Two</div>
-          <div class="link">Link Three</div>
-          <div class="link">Link Four</div>
-          <div class="link">Link Five</div>
-        </div>
-        <div class="social-links">
-          <img class="img" src="img/facebook.svg" />
-          <img class="img" src="img/instagram.svg" />
-          <img class="img" src="img/x.svg" />
-          <img class="img" src="img/linked-in.svg" />
-          <img class="img" src="img/youtube.svg" />
-        </div>
+
+  <!--------------------FOOTER--------------------------->
+
+  <div class="footer">
+    <div class="content">
+      <img class="logo" src="img/logo.svg" />
+      <div class="footer-link">
+        <div class="link">Link One</div>
+        <div class="link">Link Two</div>
+        <div class="link">Link Three</div>
+        <div class="link">Link Four</div>
+        <div class="link">Link Five</div>
       </div>
-      <div class="credits">
-        <div class="divider"></div>
+      <div class="social-links">
+        <img class="img" src="img/facebook.svg" />
+        <img class="img" src="img/instagram.svg" />
+        <img class="img" src="img/x.svg" />
+        <img class="img" src="img/linked-in.svg" />
+        <img class="img" src="img/youtube.svg" />
+      </div>
+    </div>
+    <div class="credits">
+      <div class="divider"></div>
+      <div class="div">
+        <p class="text">2023 Relume. All right reserved.</p>
         <div class="div">
-          <p class="text">2023 Relume. All right reserved.</p>
-          <div class="div">
-            <div class="text-wrapper">Privacy Policy</div>
-            <div class="text-wrapper">Terms of Service</div>
-            <div class="text-wrapper">Cookies Settings</div>
-          </div>
+          <div class="text-wrapper">Privacy Policy</div>
+          <div class="text-wrapper">Terms of Service</div>
+          <div class="text-wrapper">Cookies Settings</div>
         </div>
       </div>
     </div>
+  </div>
 
 
 
 
-
-
+  <!-------------------Script-->
+  <script src="script.js"></script>
 
 </body>
+
 </html>

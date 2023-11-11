@@ -126,6 +126,27 @@ html, body {
     top: 10px;
     position: relative;
   }
+  /*profil button script*/
+  #cadre {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  #cadre ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #cadre li {
+    margin-bottom: 10px;
+  }
+  
 
 /* Container for the form */
 .form-container {
